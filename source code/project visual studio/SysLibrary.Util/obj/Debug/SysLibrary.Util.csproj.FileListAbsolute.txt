@@ -1,0 +1,9 @@
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.pdb
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb

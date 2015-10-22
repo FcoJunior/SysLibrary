@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{890ADE69-0243-4010-BC86-E763CBCE8D3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SysLibrary.Dados</RootNamespace>
+    <AssemblyName>SysLibrary.Dados</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BibliotecarioEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\BibliotecarioDao.cs" />
+    <Compile Include="DAO\Dao.cs" />
+    <Compile Include="DAO\DevolucaoDao.cs" />
+    <Compile Include="DAO\EditoraDao.cs" />
+    <Compile Include="DAO\EmprestimoDao.cs" />
+    <Compile Include="DAO\GeneroDao.cs" />
+    <Compile Include="DAO\ObraDao.cs" />
+    <Compile Include="DAO\RenovacaoDao.cs" />
+    <Compile Include="DAO\TipoUsuarioDao.cs" />
+    <Compile Include="DAO\UsuarioFinalDao.cs" />
+    <Compile Include="DevolucaoEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EditoraEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmprestimoEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\ExemplarDao.cs" />
+    <Compile Include="ExemplarEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneroEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\IDao.cs" />
+    <Compile Include="DAO\LocacaoDao.cs" />
+    <Compile Include="LocacaoEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObraEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenovacaoEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysLibraryContext.cs" />
+    <Compile Include="SysLibraryModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysLibraryModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysLibraryModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SysLibraryModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysLibraryModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TipoUsuarioEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\UsuarioDao.cs" />
+    <Compile Include="UsuarioEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioFinalEntity.cs">
+      <DependentUpon>SysLibraryModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SysLibrary.Entidades\SysLibrary.Entidades.csproj">
+      <Project>{9536037b-6271-45a0-a254-da29283e8fdd}</Project>
+      <Name>SysLibrary.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SysLibraryModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SysLibraryModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="SysLibraryModel.edmx.diagram">
+      <DependentUpon>SysLibraryModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SysLibraryModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SysLibraryModel.edmx</DependentUpon>
+      <LastGenOutput>SysLibraryModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SysLibraryModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SysLibraryModel.edmx</DependentUpon>
+      <LastGenOutput>SysLibraryModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

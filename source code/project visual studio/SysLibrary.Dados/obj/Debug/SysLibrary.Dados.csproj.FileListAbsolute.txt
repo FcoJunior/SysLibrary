@@ -1,0 +1,12 @@
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\SysLibrary.Dados.dll.config
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\SysLibrary.Dados.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\SysLibrary.Dados.pdb
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\EntityFramework.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\SysLibrary.Entidades.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\SysLibrary.Entidades.pdb
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\EntityFramework.xml
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\obj\Debug\SysLibrary.Dados.csprojResolveAssemblyReference.cache
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\obj\Debug\SysLibrary.Dados.dll
+C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Dados\obj\Debug\SysLibrary.Dados.pdb
