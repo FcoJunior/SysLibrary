@@ -9,11 +9,40 @@ angular.module('starter', ['ionic'])
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
+    if(window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
     }
     if(window.StatusBar) {
-      StatusBar.styleDefault();
+      StatusBar.styleLightContent();
     }
-  });
-})
+  })
+  })
+    .config(function($stateProvider, $urlRouterProvider){
+      $stateProvider
+      .state('collection',{
+          url: '/collection',
+          abstract: true,
+          templateUrl: 'templates/tab_collection.html'
+        })
+        .state('collection.books', {
+          url: '/books',
+          views: {
+            'collection-books': {
+              templateUrl: 'templates/collection_books.html'
+              //controller: ''
+            }
+          }
+        })
+        .state('collection.book-details', {
+          url: '/books/:book_id',
+          views:{
+            'collection-book-details': {
+              templateUrl: 'templates/collection_book_details.html'
+              //controller: ''
+            }
+          }
+        });
+
+      $urlRouterProvider.otherwise('/collection/books');
+});
