@@ -3,3 +3,8 @@ C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.dll
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entidades.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entidades.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entidades.pdb

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SYSLIBRARY_DBModelStoreContainer" CdmEntityContainer="SYSLIBRARY_DBEntities">
+    <EntitySetMapping Name="Autor">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Autor">
+        <MappingFragment StoreEntitySet="Autor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bibliotecario">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Bibliotecario">
+        <MappingFragment StoreEntitySet="Bibliotecario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devolucao">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Devolucao">
+        <MappingFragment StoreEntitySet="Devolucao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmprestimoId" ColumnName="EmprestimoId" />
+          <ScalarProperty Name="DataDevolucao" ColumnName="DataDevolucao" />
+          <ScalarProperty Name="Multa" ColumnName="Multa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Editora">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Editora">
+        <MappingFragment StoreEntitySet="Editora">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emprestimo">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Emprestimo">
+        <MappingFragment StoreEntitySet="Emprestimo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LocacaoId" ColumnName="LocacaoId" />
+          <ScalarProperty Name="ExemplarId" ColumnName="ExemplarId" />
+          <ScalarProperty Name="DataPrevistaDevolucao" ColumnName="DataPrevistaDevolucao" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exemplar">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Exemplar">
+        <MappingFragment StoreEntitySet="Exemplar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ObraId" ColumnName="ObraId" />
+          <ScalarProperty Name="Patrimonio" ColumnName="Patrimonio" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genero">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Genero">
+        <MappingFragment StoreEntitySet="Genero">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locacao">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Locacao">
+        <MappingFragment StoreEntitySet="Locacao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioFinalId" ColumnName="UsuarioFinalId" />
+          <ScalarProperty Name="BibliotecarioId" ColumnName="BibliotecarioId" />
+          <ScalarProperty Name="DataLocacao" ColumnName="DataLocacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Renovacao">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Renovacao">
+        <MappingFragment StoreEntitySet="Renovacao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmprestimoId" ColumnName="EmprestimoId" />
+          <ScalarProperty Name="DataRenovacao" ColumnName="DataRenovacao" />
+          <ScalarProperty Name="DataPrevistaDevolucao" ColumnName="DataPrevistaDevolucao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoUsuario">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.TipoUsuario">
+        <MappingFragment StoreEntitySet="TipoUsuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TipoUsuarioId" ColumnName="TipoUsuarioId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioFinal">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.UsuarioFinal">
+        <MappingFragment StoreEntitySet="UsuarioFinal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Pendencia" ColumnName="Pendencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Obra">
+      <EntityTypeMapping TypeName="SYSLIBRARY_DBModel.Obra">
+        <MappingFragment StoreEntitySet="Obra">
+          <ScalarProperty Name="AutorId" ColumnName="AutorId" />
+          <ScalarProperty Name="DataCadastro" ColumnName="DataCadastro" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="EditoraId" ColumnName="EditoraId" />
+          <ScalarProperty Name="GeneroId" ColumnName="GeneroId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

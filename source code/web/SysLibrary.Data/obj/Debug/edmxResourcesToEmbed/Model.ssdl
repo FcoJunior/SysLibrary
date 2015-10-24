@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SYSLIBRARY_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="Bibliotecario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Devolucao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmprestimoId" Type="int" Nullable="false" />
+    <Property Name="DataDevolucao" Type="date" Nullable="false" />
+    <Property Name="Multa" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Editora">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emprestimo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocacaoId" Type="int" Nullable="false" />
+    <Property Name="ExemplarId" Type="int" Nullable="false" />
+    <Property Name="DataPrevistaDevolucao" Type="date" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Exemplar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ObraId" Type="int" Nullable="false" />
+    <Property Name="Patrimonio" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="DataCadastro" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genero">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locacao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UsuarioFinalId" Type="int" Nullable="false" />
+    <Property Name="BibliotecarioId" Type="int" Nullable="false" />
+    <Property Name="DataLocacao" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Obra">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GeneroId" Type="int" Nullable="false" />
+    <Property Name="EditoraId" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataCadastro" Type="date" Nullable="false" />
+    <Property Name="AutorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Renovacao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmprestimoId" Type="int" Nullable="false" />
+    <Property Name="DataRenovacao" Type="date" Nullable="false" />
+    <Property Name="DataPrevistaDevolucao" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoUsuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoUsuarioId" Type="int" Nullable="false" />
+    <Property Name="Email" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="Senha" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="Token" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UsuarioFinal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UsuarioId" Type="int" Nullable="false" />
+    <Property Name="Matricula" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Pendencia" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Obra__Autor__36B12243">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="1" />
+    <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Obra">
+        <PropertyRef Name="AutorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship1">
+    <End Role="TipoUsuario" Type="Self.TipoUsuario" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoUsuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="TipoUsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship10">
+    <End Role="Exemplar" Type="Self.Exemplar" Multiplicity="1" />
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exemplar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Emprestimo">
+        <PropertyRef Name="ExemplarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship11">
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="1" />
+    <End Role="Renovacao" Type="Self.Renovacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emprestimo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Renovacao">
+        <PropertyRef Name="EmprestimoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship12">
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="1" />
+    <End Role="Devolucao" Type="Self.Devolucao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emprestimo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Devolucao">
+        <PropertyRef Name="EmprestimoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship2">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="UsuarioFinal" Type="Self.UsuarioFinal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsuarioFinal">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship3">
+    <End Role="Genero" Type="Self.Genero" Multiplicity="1" />
+    <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genero">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Obra">
+        <PropertyRef Name="GeneroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship4">
+    <End Role="Editora" Type="Self.Editora" Multiplicity="1" />
+    <End Role="Obra" Type="Self.Obra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Editora">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Obra">
+        <PropertyRef Name="EditoraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship5">
+    <End Role="Obra" Type="Self.Obra" Multiplicity="1" />
+    <End Role="Exemplar" Type="Self.Exemplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Obra">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exemplar">
+        <PropertyRef Name="ObraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship6">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Bibliotecario" Type="Self.Bibliotecario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bibliotecario">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship7">
+    <End Role="UsuarioFinal" Type="Self.UsuarioFinal" Multiplicity="1" />
+    <End Role="Locacao" Type="Self.Locacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioFinal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locacao">
+        <PropertyRef Name="UsuarioFinalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship8">
+    <End Role="Bibliotecario" Type="Self.Bibliotecario" Multiplicity="1" />
+    <End Role="Locacao" Type="Self.Locacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bibliotecario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locacao">
+        <PropertyRef Name="BibliotecarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship9">
+    <End Role="Locacao" Type="Self.Locacao" Multiplicity="1" />
+    <End Role="Emprestimo" Type="Self.Emprestimo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locacao">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Emprestimo">
+        <PropertyRef Name="LocacaoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SYSLIBRARY_DBModelStoreContainer">
+    <EntitySet Name="Autor" EntityType="Self.Autor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bibliotecario" EntityType="Self.Bibliotecario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Devolucao" EntityType="Self.Devolucao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Editora" EntityType="Self.Editora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emprestimo" EntityType="Self.Emprestimo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exemplar" EntityType="Self.Exemplar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genero" EntityType="Self.Genero" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Locacao" EntityType="Self.Locacao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Obra" EntityType="Self.Obra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Renovacao" EntityType="Self.Renovacao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoUsuario" EntityType="Self.TipoUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioFinal" EntityType="Self.UsuarioFinal" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Obra__Autor__36B12243" Association="Self.FK__Obra__Autor__36B12243">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Obra" EntitySet="Obra" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship1" Association="Self.Relationship1">
+      <End Role="TipoUsuario" EntitySet="TipoUsuario" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship10" Association="Self.Relationship10">
+      <End Role="Exemplar" EntitySet="Exemplar" />
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship11" Association="Self.Relationship11">
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+      <End Role="Renovacao" EntitySet="Renovacao" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship12" Association="Self.Relationship12">
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+      <End Role="Devolucao" EntitySet="Devolucao" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship2" Association="Self.Relationship2">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="UsuarioFinal" EntitySet="UsuarioFinal" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship3" Association="Self.Relationship3">
+      <End Role="Genero" EntitySet="Genero" />
+      <End Role="Obra" EntitySet="Obra" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship4" Association="Self.Relationship4">
+      <End Role="Editora" EntitySet="Editora" />
+      <End Role="Obra" EntitySet="Obra" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship5" Association="Self.Relationship5">
+      <End Role="Obra" EntitySet="Obra" />
+      <End Role="Exemplar" EntitySet="Exemplar" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship6" Association="Self.Relationship6">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Bibliotecario" EntitySet="Bibliotecario" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship7" Association="Self.Relationship7">
+      <End Role="UsuarioFinal" EntitySet="UsuarioFinal" />
+      <End Role="Locacao" EntitySet="Locacao" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship8" Association="Self.Relationship8">
+      <End Role="Bibliotecario" EntitySet="Bibliotecario" />
+      <End Role="Locacao" EntitySet="Locacao" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship9" Association="Self.Relationship9">
+      <End Role="Locacao" EntitySet="Locacao" />
+      <End Role="Emprestimo" EntitySet="Emprestimo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

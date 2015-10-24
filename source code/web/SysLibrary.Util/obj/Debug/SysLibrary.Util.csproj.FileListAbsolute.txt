@@ -7,3 +7,4 @@ C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
 C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache

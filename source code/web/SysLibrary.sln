@@ -5,36 +5,17 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.Negocio", "SysLibrary.Negocio\SysLibrary.Negocio.csproj", "{B363D176-7FAB-438C-9A90-3BC687E84B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.Dados", "SysLibrary.Dados\SysLibrary.Dados.csproj", "{890ADE69-0243-4010-BC86-E763CBCE8D3D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.Util", "SysLibrary.Util\SysLibrary.Util.csproj", "{2BD21708-DD2B-4808-BC3C-8B75EF96E352}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.Entidades", "SysLibrary.Entidades\SysLibrary.Entidades.csproj", "{9536037B-6271-45A0-A254-DA29283E8FDD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.WebApi", "SysLibrary.WebApi\SysLibrary.WebApi.csproj", "{56E15919-7CB4-4180-8F32-E2967F830DB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.WebApp", "SysLibrary.WebApp\SysLibrary.WebApp.csproj", "{B44ED36E-EC32-4C9D-96E4-5A1AE4AE986E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysLibrary.Data", "SysLibrary.Data\SysLibrary.Data.csproj", "{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://syslibrary.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SysLibrary.Dados\\SysLibrary.Dados.csproj
-		SccProjectName1 = SysLibrary.Dados
-		SccLocalPath1 = SysLibrary.Dados
-		SccProjectUniqueName2 = SysLibrary.Entidades\\SysLibrary.Entidades.csproj
-		SccProjectName2 = SysLibrary.Entidades
-		SccLocalPath2 = SysLibrary.Entidades
-		SccProjectUniqueName3 = SysLibrary.Negocio\\SysLibrary.Negocio.csproj
-		SccProjectName3 = SysLibrary.Negocio
-		SccLocalPath3 = SysLibrary.Negocio
-		SccProjectUniqueName4 = SysLibrary.Util\\SysLibrary.Util.csproj
-		SccProjectName4 = SysLibrary.Util
-		SccLocalPath4 = SysLibrary.Util
-		SccProjectUniqueName5 = SysLibrary.WebApi\\SysLibrary.WebApi.csproj
-		SccProjectName5 = SysLibrary.WebApi
-		SccLocalPath5 = SysLibrary.WebApi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -44,10 +25,6 @@ Global
 		{B363D176-7FAB-438C-9A90-3BC687E84B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B363D176-7FAB-438C-9A90-3BC687E84B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B363D176-7FAB-438C-9A90-3BC687E84B88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{890ADE69-0243-4010-BC86-E763CBCE8D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{890ADE69-0243-4010-BC86-E763CBCE8D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{890ADE69-0243-4010-BC86-E763CBCE8D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{890ADE69-0243-4010-BC86-E763CBCE8D3D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BD21708-DD2B-4808-BC3C-8B75EF96E352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2BD21708-DD2B-4808-BC3C-8B75EF96E352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD21708-DD2B-4808-BC3C-8B75EF96E352}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,6 +37,14 @@ Global
 		{56E15919-7CB4-4180-8F32-E2967F830DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56E15919-7CB4-4180-8F32-E2967F830DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56E15919-7CB4-4180-8F32-E2967F830DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44ED36E-EC32-4C9D-96E4-5A1AE4AE986E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44ED36E-EC32-4C9D-96E4-5A1AE4AE986E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44ED36E-EC32-4C9D-96E4-5A1AE4AE986E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44ED36E-EC32-4C9D-96E4-5A1AE4AE986E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

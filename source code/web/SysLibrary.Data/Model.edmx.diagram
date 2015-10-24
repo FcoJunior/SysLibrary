@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="badb27b43f72452c818a5d19283c72c9" Name="Diagram1">
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Autor" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Bibliotecario" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Devolucao" Width="1.5" PointX="9.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Editora" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Emprestimo" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Exemplar" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Genero" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Locacao" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Renovacao" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.TipoUsuario" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Usuario" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.UsuarioFinal" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship6" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship8" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship12" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship10" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship11" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship9" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship7" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship1" ManuallyRouted="false" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship2" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SYSLIBRARY_DBModel.Obra" Width="1.5" PointX="3" PointY="3.25" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.FK__Obra__Autor__36B12243" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship4" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship5" />
+        <AssociationConnector Association="SYSLIBRARY_DBModel.Relationship3" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

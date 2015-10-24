@@ -51,10 +51,6 @@
     <Compile Include="UsuarioBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SysLibrary.Dados\SysLibrary.Dados.csproj">
-      <Project>{890ade69-0243-4010-bc86-e763cbce8d3d}</Project>
-      <Name>SysLibrary.Dados</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SysLibrary.Entidades\SysLibrary.Entidades.csproj">
       <Project>{9536037b-6271-45a0-a254-da29283e8fdd}</Project>
       <Name>SysLibrary.Entidades</Name>
