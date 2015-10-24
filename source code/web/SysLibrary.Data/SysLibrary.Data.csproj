@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="DAL\AutorDao.cs" />
     <Compile Include="DAL\Dao.cs" />
+    <Compile Include="DAL\EditoraDao.cs" />
     <Compile Include="DAL\IDao.cs" />
     <Compile Include="Devolucao.cs">
       <DependentUpon>Model.tt</DependentUpon>

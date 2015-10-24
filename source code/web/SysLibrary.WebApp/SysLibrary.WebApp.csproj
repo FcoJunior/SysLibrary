@@ -149,6 +149,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AutorController.cs" />
+    <Compile Include="Controllers\EditoraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -201,6 +202,9 @@
     <Content Include="Views\Autor\Index.cshtml" />
     <Content Include="Views\Autor\Form.cshtml" />
     <Content Include="Views\Autor\Edit.cshtml" />
+    <Content Include="Views\Editora\Index.cshtml" />
+    <Content Include="Views\Editora\Edit.cshtml" />
+    <Content Include="Views\Editora\Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

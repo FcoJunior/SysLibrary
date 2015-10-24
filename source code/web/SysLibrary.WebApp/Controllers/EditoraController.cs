@@ -8,45 +8,45 @@ using SysLibrary.Entidades.DTO;
 
 namespace SysLibrary.WebApp.Controllers
 {
-    public class AutorController : Controller
+    public class EditoraController : Controller
     {
-        // GET: Autor
+        // GET: Editora
         public ActionResult Index()
         {
-            AutorBusiness business = new AutorBusiness();
-            return View(business.GetAutor());
+            EditoraBusiness business = new EditoraBusiness();
+            return View(business.GetEditora());
         }
 
-        // POST: Autor/Create
+        // POST: Editora/Create
         [HttpPost]
-        public ActionResult Create(AutorDTO obj)
+        public ActionResult Create(EditoraDTO obj)
         {
             try
             {
-                AutorBusiness business = new AutorBusiness();
+                EditoraBusiness business = new EditoraBusiness();
                 business.Create(obj);
                 return RedirectToAction("Index");
             }
             catch
             {
-                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest); ;
+                return View();
             }
         }
 
-        // GET: Autor/Edit/5
+        // GET: Editora/Edit/5
         public ActionResult Edit(int id)
         {
-            AutorBusiness business = new AutorBusiness();
-            return View(business.GetAutorById(id));
+            EditoraBusiness business = new EditoraBusiness();
+            return View(business.GetEditoraById(id));
         }
 
-        // POST: Autor/Edit/5
+        // POST: Editora/Edit/5
         [HttpPost]
-        public ActionResult Edit(AutorDTO obj)
+        public ActionResult Edit(EditoraDTO obj)
         {
             try
             {
-                AutorBusiness business = new AutorBusiness();
+                EditoraBusiness business = new EditoraBusiness();
                 business.Update(obj);
                 return RedirectToAction("Index");
             }
