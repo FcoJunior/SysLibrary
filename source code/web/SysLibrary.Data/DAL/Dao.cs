@@ -11,7 +11,7 @@ namespace SysLibrary.Data.DAL
         /// <summary>
         /// Use Context for connect to database 
         /// </summary>
-        public SYSLIBRARY_DBEntities Context = new SYSLIBRARY_DBEntities();
+        protected SYSLIBRARY_DBEntities Context = new SYSLIBRARY_DBEntities();
 
         /// <summary>
         /// Save modifications

@@ -1,4 +1,3 @@
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll.config
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.pdb
@@ -8,5 +7,6 @@ C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLib
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.pdb
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.xml
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
