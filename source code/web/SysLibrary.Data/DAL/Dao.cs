@@ -13,5 +13,13 @@ namespace SysLibrary.Data.DAL
         /// </summary>
         public SYSLIBRARY_DBEntities Context = new SYSLIBRARY_DBEntities();
 
+        /// <summary>
+        /// Save modifications
+        /// </summary>
+        public void Save()
+        {
+            Context.SaveChanges();
+        }
+
     }
 }

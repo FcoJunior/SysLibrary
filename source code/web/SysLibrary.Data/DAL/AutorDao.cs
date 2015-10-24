@@ -8,42 +8,59 @@ using SysLibrary.Entidades.DTO;
 
 namespace SysLibrary.Data.DAL
 {
-    public class AutorDao : IDao<AutorDTO>
+    public class AutorDao : Dao, IDao<AutorDTO>
     {
-
         public void Insert(AutorDTO obj)
         {
-            throw new NotImplementedException();
+            Autor entity = Parse(obj);
+            Context.Autor.Add(entity);
         }
 
         public void Update(AutorDTO obj)
         {
-            throw new NotImplementedException();
+            Autor entity = Parse(obj);
+            Context.Entry<Autor>(entity).State = EntityState.Modified;
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            Context.Autor.Remove(Context.Autor.Find(id));
         }
 
         public AutorDTO Get(int id)
         {
-            throw new NotImplementedException();
+            var query = (from e in Context.Autor
+                             where e.Id.Equals(id)
+                             select new AutorDTO(){
+                                 Id = e.Id,
+                                 Nome = e.Nome
+                             }).Single();
+            return query;
         }
 
         public List<AutorDTO> Get()
         {
-            throw new NotImplementedException();
+            var query = (from e in Context.Autor
+                         select new AutorDTO()
+                         {
+                             Id = e.Id,
+                             Nome = e.Nome
+                         }).ToList();
+            return query;
         }
 
         public int Count()
         {
-            throw new NotImplementedException();
+            return Context.Autor.Count();
         }
 
-        public AutorDTO Parse(Autor entity)
+        private Autor Parse(AutorDTO entity)
         {
-            throw new NotImplementedException();
+            return new Autor() 
+            {
+                Id = entity.Id,
+                Nome = entity.Nome
+            };
         }
     }
 }
