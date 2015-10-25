@@ -1,5 +1,7 @@
 <ion-view view-title="Books">
   <ion-content class="padding">
+    <ion-refresher on-refresh="refresh()">
+    </ion-refresher>
     <div class="list" ng-repeat="book in books">
       <a class="item item-thumbnail-left" ng-href="#/collection/books/{{book.Id}}">
         <img src="img/not-found.jpg">
