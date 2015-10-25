@@ -1,1 +1,31 @@
+<ion-view view-title="Details">
+  <ion-content class="padding">
+    <div class="list card">
 
+      <a class="item item-icon-left">
+        <i class="icon ion-ios-bookmarks"></i>
+        <p>Nome do Livro</p>
+        {{book.Nome}}
+      </a>
+
+      <a class="item item-icon-left">
+        <i class="icon ion-person"></i>
+        <p>Autor</p>
+        {{book.Autor.Nome}}
+      </a>
+
+      <a class="item item-icon-left">
+        <i class="icon ion-printer"></i>
+        <p>Editora</p>
+        {{book.Editora.Nome}}
+      </a>
+
+      <a class="item item-icon-left">
+        <i class="icon ion-university"></i>
+        <p>Gênero</p>
+        {{book.Genero.Nome}}
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>
