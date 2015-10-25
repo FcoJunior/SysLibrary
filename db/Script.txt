@@ -1,0 +1,322 @@
+CREATE DATABASE SYSLIBRARY_DB
+
+USE [SYSLIBRARY_DB]
+GO
+/****** Object:  Table [dbo].[Autor]    Script Date: 25/10/2015 15:46:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Autor](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](70) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Bibliotecario]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Bibliotecario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UserId] [int] NOT NULL,
+	[Nome] [varchar](100) NOT NULL,
+ CONSTRAINT [Key8] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Devolucao]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Devolucao](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[EmprestimoId] [int] NOT NULL,
+	[DataDevolucao] [date] NOT NULL,
+	[Multa] [real] NOT NULL,
+ CONSTRAINT [Key12] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[Editora]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Editora](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](100) NOT NULL,
+ CONSTRAINT [Key6] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Emprestimo]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Emprestimo](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[LocacaoId] [int] NOT NULL,
+	[ExemplarId] [int] NOT NULL,
+	[DataPrevistaDevolucao] [date] NOT NULL,
+	[Status] [bit] NOT NULL,
+ CONSTRAINT [Key10] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[Exemplar]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Exemplar](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ObraId] [int] NOT NULL,
+	[Patrimonio] [varchar](30) NOT NULL,
+	[Status] [bit] NOT NULL,
+	[DataCadastro] [date] NOT NULL,
+ CONSTRAINT [Key7] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Genero]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Genero](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+ CONSTRAINT [Key5] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Locacao]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Locacao](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UsuarioFinalId] [int] NOT NULL,
+	[BibliotecarioId] [int] NOT NULL,
+	[DataLocacao] [date] NOT NULL,
+ CONSTRAINT [Key9] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[Obra]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Obra](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[GeneroId] [int] NOT NULL,
+	[EditoraId] [int] NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[DataCadastro] [date] NOT NULL,
+	[AutorId] [int] NOT NULL,
+ CONSTRAINT [Key4] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Renovacao]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Renovacao](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[EmprestimoId] [int] NOT NULL,
+	[DataRenovacao] [date] NOT NULL,
+	[DataPrevistaDevolucao] [date] NOT NULL,
+ CONSTRAINT [Key11] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TipoUsuario]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[TipoUsuario](
+	[Id] [int] NOT NULL,
+	[Tipo] [varchar](50) NOT NULL,
+ CONSTRAINT [Key2] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[TipoUsuarioId] [int] NOT NULL,
+	[Email] [char](30) NOT NULL,
+	[Senha] [varchar](15) NOT NULL,
+	[Status] [bit] NOT NULL,
+	[Token] [varchar](100) NULL,
+ CONSTRAINT [Key1] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[UsuarioFinal]    Script Date: 25/10/2015 15:46:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[UsuarioFinal](
+	[Id] [int] NOT NULL,
+	[UsuarioId] [int] NOT NULL,
+	[Matricula] [varchar](20) NOT NULL,
+	[Nome] [varchar](100) NOT NULL,
+	[Pendencia] [bit] NOT NULL,
+ CONSTRAINT [Key3] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+ALTER TABLE [dbo].[Bibliotecario]  WITH CHECK ADD  CONSTRAINT [Relationship6] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Usuario] ([Id])
+GO
+ALTER TABLE [dbo].[Bibliotecario] CHECK CONSTRAINT [Relationship6]
+GO
+ALTER TABLE [dbo].[Devolucao]  WITH CHECK ADD  CONSTRAINT [Relationship12] FOREIGN KEY([EmprestimoId])
+REFERENCES [dbo].[Emprestimo] ([Id])
+GO
+ALTER TABLE [dbo].[Devolucao] CHECK CONSTRAINT [Relationship12]
+GO
+ALTER TABLE [dbo].[Emprestimo]  WITH CHECK ADD  CONSTRAINT [Relationship10] FOREIGN KEY([ExemplarId])
+REFERENCES [dbo].[Exemplar] ([Id])
+GO
+ALTER TABLE [dbo].[Emprestimo] CHECK CONSTRAINT [Relationship10]
+GO
+ALTER TABLE [dbo].[Emprestimo]  WITH CHECK ADD  CONSTRAINT [Relationship9] FOREIGN KEY([LocacaoId])
+REFERENCES [dbo].[Locacao] ([Id])
+GO
+ALTER TABLE [dbo].[Emprestimo] CHECK CONSTRAINT [Relationship9]
+GO
+ALTER TABLE [dbo].[Exemplar]  WITH CHECK ADD  CONSTRAINT [Relationship5] FOREIGN KEY([ObraId])
+REFERENCES [dbo].[Obra] ([Id])
+GO
+ALTER TABLE [dbo].[Exemplar] CHECK CONSTRAINT [Relationship5]
+GO
+ALTER TABLE [dbo].[Locacao]  WITH CHECK ADD  CONSTRAINT [Relationship7] FOREIGN KEY([UsuarioFinalId])
+REFERENCES [dbo].[UsuarioFinal] ([Id])
+GO
+ALTER TABLE [dbo].[Locacao] CHECK CONSTRAINT [Relationship7]
+GO
+ALTER TABLE [dbo].[Locacao]  WITH CHECK ADD  CONSTRAINT [Relationship8] FOREIGN KEY([BibliotecarioId])
+REFERENCES [dbo].[Bibliotecario] ([Id])
+GO
+ALTER TABLE [dbo].[Locacao] CHECK CONSTRAINT [Relationship8]
+GO
+ALTER TABLE [dbo].[Obra]  WITH CHECK ADD FOREIGN KEY([AutorId])
+REFERENCES [dbo].[Autor] ([Id])
+GO
+ALTER TABLE [dbo].[Obra]  WITH CHECK ADD  CONSTRAINT [Relationship3] FOREIGN KEY([GeneroId])
+REFERENCES [dbo].[Genero] ([Id])
+GO
+ALTER TABLE [dbo].[Obra] CHECK CONSTRAINT [Relationship3]
+GO
+ALTER TABLE [dbo].[Obra]  WITH CHECK ADD  CONSTRAINT [Relationship4] FOREIGN KEY([EditoraId])
+REFERENCES [dbo].[Editora] ([Id])
+GO
+ALTER TABLE [dbo].[Obra] CHECK CONSTRAINT [Relationship4]
+GO
+ALTER TABLE [dbo].[Renovacao]  WITH CHECK ADD  CONSTRAINT [Relationship11] FOREIGN KEY([EmprestimoId])
+REFERENCES [dbo].[Emprestimo] ([Id])
+GO
+ALTER TABLE [dbo].[Renovacao] CHECK CONSTRAINT [Relationship11]
+GO
+ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD  CONSTRAINT [Relationship1] FOREIGN KEY([TipoUsuarioId])
+REFERENCES [dbo].[TipoUsuario] ([Id])
+GO
+ALTER TABLE [dbo].[Usuario] CHECK CONSTRAINT [Relationship1]
+GO
+ALTER TABLE [dbo].[UsuarioFinal]  WITH CHECK ADD  CONSTRAINT [Relationship2] FOREIGN KEY([UsuarioId])
+REFERENCES [dbo].[Usuario] ([Id])
+GO
+ALTER TABLE [dbo].[UsuarioFinal] CHECK CONSTRAINT [Relationship2]
+GO
