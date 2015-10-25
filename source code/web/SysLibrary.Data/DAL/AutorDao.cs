@@ -29,23 +29,18 @@ namespace SysLibrary.Data.DAL
 
         public AutorDTO Get(int id)
         {
-            var query = (from e in Context.Autor
-                             where e.Id.Equals(id)
-                             select new AutorDTO(){
-                                 Id = e.Id,
-                                 Nome = e.Nome
-                             }).Single();
+            var query = Context.Autor
+                .Where(c => c.Id.Equals(id))
+                .Select(c => new AutorDTO() { Id = c.Id, Nome = c.Nome })
+                .Single();
             return query;
         }
 
         public List<AutorDTO> Get()
         {
-            var query = (from e in Context.Autor
-                         select new AutorDTO()
-                         {
-                             Id = e.Id,
-                             Nome = e.Nome
-                         }).ToList();
+            var query = Context.Autor
+                .Select(c => new AutorDTO() { Id = c.Id, Nome = c.Nome })
+                .ToList();
             return query;
         }
 

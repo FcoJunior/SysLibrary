@@ -18,27 +18,64 @@ namespace SysLibrary.Data.DAL
 
         public void Update(ObraDTO obj)
         {
-            throw new NotImplementedException();
+            Obra entity = Parse(obj);
+            Context.Entry<Obra>(entity).State = EntityState.Modified;
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            Context.Obra.Remove(Context.Obra.Find(id));
         }
 
         public ObraDTO Get(int id)
         {
-            throw new NotImplementedException();
+            var query = Context.Obra
+                .Where(c => c.Id.Equals(id))
+                .Select(c => new ObraDTO() { 
+                    Id = c.Id, 
+                    Nome = c.Nome, 
+                    EditoraId = c.EditoraId, 
+                    GeneroId = c.GeneroId, 
+                    AutorId = c.AutorId })
+                .Single();
+            return query;
         }
 
         public List<ObraDTO> Get()
         {
-            throw new NotImplementedException();
+            var query = Context.Obra
+                .Select(c => new ObraDTO()
+                {
+                    Id = c.Id,
+                    Nome = c.Nome,
+                    EditoraId = c.EditoraId,
+                    GeneroId = c.GeneroId,
+                    AutorId = c.AutorId
+                })
+                .ToList();
+            return query;
+        }
+
+        public List<ObraDTO> Get(int pageNumber, int numberObjectsPerPage)
+        {
+            var query = Context.Obra
+                .Select(c => new ObraDTO()
+                {
+                    Id = c.Id,
+                    Nome = c.Nome,
+                    EditoraId = c.EditoraId,
+                    GeneroId = c.GeneroId,
+                    AutorId = c.AutorId
+                })
+                .Skip(numberObjectsPerPage * pageNumber)
+                .Take(numberObjectsPerPage)
+                .ToList();
+            return query;
         }
 
         public int Count()
         {
-            throw new NotImplementedException();
+            return Context.Obra.Count();
         }
 
         public Obra Parse(ObraDTO obj)

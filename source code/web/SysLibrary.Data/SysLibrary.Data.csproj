@@ -59,6 +59,7 @@
     <Compile Include="DAL\AutorDao.cs" />
     <Compile Include="DAL\Dao.cs" />
     <Compile Include="DAL\EditoraDao.cs" />
+    <Compile Include="DAL\GeneroDao.cs" />
     <Compile Include="DAL\IDao.cs" />
     <Compile Include="DAL\ObraDao.cs" />
     <Compile Include="Devolucao.cs">

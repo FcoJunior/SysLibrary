@@ -151,10 +151,12 @@
     <Compile Include="Controllers\AutorController.cs" />
     <Compile Include="Controllers\EditoraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ObraController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ObraViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -205,6 +207,10 @@
     <Content Include="Views\Editora\Index.cshtml" />
     <Content Include="Views\Editora\Edit.cshtml" />
     <Content Include="Views\Editora\Form.cshtml" />
+    <Content Include="Views\Obra\Index.cshtml" />
+    <Content Include="Views\Obra\Form.cshtml" />
+    <Content Include="Views\Obra\Edit.cshtml" />
+    <Content Include="Views\Obra\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -29,23 +29,18 @@ namespace SysLibrary.Data.DAL
 
         public EditoraDTO Get(int id)
         {
-            var query = (from e in Context.Editora 
-                         where e.Id.Equals(id) 
-                         select new EditoraDTO() {
-                             Id = e.Id,
-                             Nome = e.Nome
-                         }).Single();
+            var query = Context.Editora
+                .Where(c => c.Id.Equals(id))
+                .Select(c => new EditoraDTO() { Id = c.Id, Nome = c.Nome })
+                .Single();
             return query;
         }
 
         public List<EditoraDTO> Get()
         {
-            var query = (from e in Context.Editora
-                         select new EditoraDTO()
-                         {
-                             Id = e.Id,
-                             Nome = e.Nome
-                         }).ToList();
+            var query = Context.Editora
+                .Select(c => new EditoraDTO() { Id = c.Id, Nome = c.Nome })
+                .ToList();
             return query;
         }
 
