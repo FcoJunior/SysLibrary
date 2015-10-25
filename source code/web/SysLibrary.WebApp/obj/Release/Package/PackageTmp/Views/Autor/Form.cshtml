@@ -1,0 +1,11 @@
+﻿@using SysLibrary.Entidades.DTO;
+@model AutorDTO
+
+<input type="hidden" name="Id" value="@Model.Id" />
+
+<div class="form-group">
+    <label class="control-label col-lg-2">Nome</label>
+    <div class="col-lg-6">
+        <input type="text" name="Nome" value="@Model.Nome" class="form-control" required />
+    </div>
+</div>

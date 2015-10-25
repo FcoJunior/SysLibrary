@@ -1,0 +1,51 @@
+﻿@using SysLibrary.Entidades.DTO;
+
+@model List<EditoraDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Editoras</h2>
+
+<div class="col-lg-10">
+    @using (Html.BeginForm("Create", "Editora", FormMethod.Post))
+    {
+        <div class="form-horizontal">
+            @Html.Partial("Form", new EditoraDTO())
+            <div class="form-group">
+                <div class="col-lg-6 text-right">
+                    <button type="submit" class="btn btn-default">Novo</button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <table class="table table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.Id</td>
+                    <td>@e.Nome</td>
+                    <td>
+                        <button type="button" class="btn-link" onclick="redirect(@e.Id)">Editar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <script>
+        function redirect(id) {
+            location.href = "/Editora/Edit/" + id;
+        }
+    </script>
+</div>
+

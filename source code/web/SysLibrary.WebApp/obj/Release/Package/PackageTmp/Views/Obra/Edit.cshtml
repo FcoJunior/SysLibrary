@@ -1,0 +1,29 @@
+﻿@using SysLibrary.WebApp.ViewModels;
+
+@model ObraViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar</h2>
+
+<div class="col-lg-10">
+    @using (Html.BeginForm("Edit", "Obra", FormMethod.Post))
+    {
+        <div class="form-horizontal">
+            @Html.Partial("Form", Model)
+            <div class="form-group">
+                <div class="col-lg-6">
+                    <button type="submit" class="btn btn-danger">Editar</button>
+                    <button type="button" class="btn btn-default" onclick="redirect()">Voltar</button>
+                </div>
+            </div>
+        </div>
+    }
+    <script>
+        function redirect() {
+            location.href = '/Obra/';
+        }
+    </script>
+</div>

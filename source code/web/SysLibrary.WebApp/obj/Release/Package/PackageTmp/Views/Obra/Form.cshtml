@@ -1,0 +1,65 @@
+﻿@using SysLibrary.WebApp.ViewModels;
+@model ObraViewModel
+
+<input type="hidden" name="Id" value="@Model.Obra.Id" />
+
+<div class="form-group">
+    <label class="control-label col-lg-2">Nome</label>
+    <div class="col-lg-6">
+        <input type="text" name="Nome" value="@Model.Obra.Nome" class="form-control" required />
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-lg-2">Autor</label>
+    <div class="col-lg-6">
+        <select name="AutorId" class="form-control" required>
+            @foreach (var e in @Model.Autores)
+            {
+                if (e.Id.Equals(Model.Obra.AutorId))
+                {
+                    <option value="@e.Id" selected>@e.Nome</option>
+                }
+                else
+                {
+                    <option value="@e.Id">@e.Nome</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-lg-2">Editora</label>
+    <div class="col-lg-6">
+        <select name="EditoraId" class="form-control" required>
+            @foreach (var e in @Model.Editoras)
+            {
+                if (e.Id.Equals(Model.Obra.EditoraId))
+                {
+                    <option value="@e.Id" selected>@e.Nome</option>
+                }
+                else
+                {
+                    <option value="@e.Id">@e.Nome</option>
+                }
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-lg-2">Genero</label>
+    <div class="col-lg-6">
+        <select name="GeneroId" class="form-control" required>
+            @foreach (var e in @Model.Generos)
+            {
+                if (e.Id.Equals(Model.Obra.GeneroId))
+                {
+                    <option value="@e.Id" selected>@e.Nome</option>
+                }
+                else
+                {
+                    <option value="@e.Id">@e.Nome</option>
+                }
+            }
+        </select>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Business.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Business.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Data.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Entidades.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\EntityFramework.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Data.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\SysLibrary.Entidades.pdb
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Release\EntityFramework.xml
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\obj\Release\SysLibrary.Business.csprojResolveAssemblyReference.cache
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\obj\Release\SysLibrary.Business.dll
+C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\obj\Release\SysLibrary.Business.pdb
