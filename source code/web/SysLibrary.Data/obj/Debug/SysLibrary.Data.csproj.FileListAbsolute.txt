@@ -10,3 +10,15 @@ C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLib
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll.config
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb

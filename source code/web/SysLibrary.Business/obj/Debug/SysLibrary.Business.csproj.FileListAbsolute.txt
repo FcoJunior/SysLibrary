@@ -9,3 +9,14 @@ C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLib
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\EntityFramework.xml
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\obj\Debug\SysLibrary.Business.dll
 C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Business\obj\Debug\SysLibrary.Business.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Business.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Business.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Entidades.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\SysLibrary.Entidades.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\obj\Debug\SysLibrary.Business.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Business\obj\Debug\SysLibrary.Business.pdb
