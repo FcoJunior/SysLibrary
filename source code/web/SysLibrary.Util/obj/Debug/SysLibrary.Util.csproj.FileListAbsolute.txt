@@ -1,26 +1,5 @@
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.dll
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.pdb
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
-C:\Users\Prolins-PC\Source\Workspaces\SysLibrary\Source Code\Project\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entidades.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache

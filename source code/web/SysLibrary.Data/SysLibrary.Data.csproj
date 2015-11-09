@@ -4,13 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2A70B8BE-0C28-48BF-AA93-61CA9F819DA9}</ProjectGuid>
+    <ProjectGuid>{07EBD39F-F17F-42CE-869A-6D2A5F736977}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SysLibrary.Data</RootNamespace>
     <AssemblyName>SysLibrary.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,141 +34,79 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="System">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.ComponentModel.DataAnnotations">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.CSharp">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autor.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Context.cs" />
+    <Compile Include="Migrations\201510280418046_InitialCreate.cs" />
+    <Compile Include="Migrations\201510280418046_InitialCreate.Designer.cs">
+      <DependentUpon>201510280418046_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bibliotecario.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Migrations\201511041328160_alteracaoDaClasseUsuario.cs" />
+    <Compile Include="Migrations\201511041328160_alteracaoDaClasseUsuario.Designer.cs">
+      <DependentUpon>201511041328160_alteracaoDaClasseUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL\AutorDao.cs" />
-    <Compile Include="DAL\Dao.cs" />
-    <Compile Include="DAL\EditoraDao.cs" />
-    <Compile Include="DAL\GeneroDao.cs" />
-    <Compile Include="DAL\IDao.cs" />
-    <Compile Include="DAL\ObraDao.cs" />
-    <Compile Include="Devolucao.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Migrations\201511041401298_alteracaoDaClasseObra.cs" />
+    <Compile Include="Migrations\201511041401298_alteracaoDaClasseObra.Designer.cs">
+      <DependentUpon>201511041401298_alteracaoDaClasseObra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Editora.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Migrations\201511041423259_alteracaoDaClasseObra2.cs" />
+    <Compile Include="Migrations\201511041423259_alteracaoDaClasseObra2.Designer.cs">
+      <DependentUpon>201511041423259_alteracaoDaClasseObra2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Emprestimo.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Migrations\201511041424198_alteracaoDaClasseObra3.cs" />
+    <Compile Include="Migrations\201511041424198_alteracaoDaClasseObra3.Designer.cs">
+      <DependentUpon>201511041424198_alteracaoDaClasseObra3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exemplar.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+    <Compile Include="Migrations\201511041425182_alteracaoDaClasseObra4.cs" />
+    <Compile Include="Migrations\201511041425182_alteracaoDaClasseObra4.Designer.cs">
+      <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Genero.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Locacao.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Obra.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renovacao.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TipoUsuario.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UsuarioFinal.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SysLibrary.Entidades\SysLibrary.Entidades.csproj">
-      <Project>{9536037b-6271-45a0-a254-da29283e8fdd}</Project>
-      <Name>SysLibrary.Entidades</Name>
+    <ProjectReference Include="..\SysLibrary.Entidades\SysLibrary.Entities.csproj">
+      <Project>{d2d4b38e-6559-40fc-bd55-c00b14af50ba}</Project>
+      <Name>SysLibrary.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510280418046_InitialCreate.resx">
+      <DependentUpon>201510280418046_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511041328160_alteracaoDaClasseUsuario.resx">
+      <DependentUpon>201511041328160_alteracaoDaClasseUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511041401298_alteracaoDaClasseObra.resx">
+      <DependentUpon>201511041401298_alteracaoDaClasseObra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511041423259_alteracaoDaClasseObra2.resx">
+      <DependentUpon>201511041423259_alteracaoDaClasseObra2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511041424198_alteracaoDaClasseObra3.resx">
+      <DependentUpon>201511041424198_alteracaoDaClasseObra3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511041425182_alteracaoDaClasseObra4.resx">
+      <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

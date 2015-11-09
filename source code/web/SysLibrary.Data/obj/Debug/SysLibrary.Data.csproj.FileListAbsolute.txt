@@ -1,24 +1,19 @@
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll.config
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.xml
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll.config
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Data.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\SysLibrary.Entidades.pdb
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.xml
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
-C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll.config
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.migracaoInicial.resources
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.csproj.GenerateResource.Cache
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.alteracaoDaClasseUsuario.resources
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.alteracaoDaClasseObra.resources
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.alteracaoDaClasseObra2.resources
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.alteracaoDaClasseObra3.resources
+C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.alteracaoDaClasseObra4.resources

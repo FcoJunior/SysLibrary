@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 using Newtonsoft.Json;
+using SysLibrary.Entities;
 
 namespace SysLibrary.Util
 {
@@ -24,7 +25,7 @@ namespace SysLibrary.Util
             return JsonConvert.DeserializeObject<EncryptionObject>(json);
         }
 
-        public static string CreateToken(SysLibrary.Entidades.DTO.UsuarioDTO usuario)
+        public static string CreateToken(Usuario usuario)
         {
 
             string input = usuario.Id.ToString() + usuario.Email + DateTime.Now.ToString();

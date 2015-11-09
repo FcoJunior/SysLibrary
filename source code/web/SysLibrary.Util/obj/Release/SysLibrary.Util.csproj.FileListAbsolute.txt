@@ -1,8 +1,0 @@
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Release\SysLibrary.Util.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Release\SysLibrary.Util.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Release\Newtonsoft.Json.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Release\SysLibrary.Entidades.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\bin\Release\SysLibrary.Entidades.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Release\SysLibrary.Util.csprojResolveAssemblyReference.cache
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Release\SysLibrary.Util.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Util\obj\Release\SysLibrary.Util.pdb

@@ -1,4 +1,0 @@
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\bin\Release\SysLibrary.Entidades.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\bin\Release\SysLibrary.Entidades.pdb
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\obj\Release\SysLibrary.Entidades.dll
-C:\Users\FcoJunr\Documents\Projetos\Biblioteca\SysLibrary\source code\web\SysLibrary.Entidades\obj\Release\SysLibrary.Entidades.pdb
