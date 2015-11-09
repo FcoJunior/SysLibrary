@@ -1,0 +1,38 @@
+﻿@model SysLibrary.Entities.Exemplar
+
+@{
+    ViewBag.Title = "Details";
+}
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Visualizar Obra</h2>
+<hr />
+
+<div>
+
+    <table class="table table-bordered">
+        <tr>
+            <td><b>Patrimônio</b></td>
+            <td>@Html.DisplayFor(model => model.Patrimonio)</td>
+        </tr>
+        <tr>
+            <td><b>Título da Obra</b></td>
+            <td>@Html.DisplayFor(model => model.Obra.Titulo)</td>
+        </tr>
+        <tr>
+            <td><b>Status</b></td>
+            <td>@Html.DisplayFor(model => model.Status)</td>
+        </tr>
+        <tr>
+            <td><b>Data de Cadastro</b></td>
+            <td>@Model.DataDeCadastro.ToString("dd/MM/yyyy")</td>
+        </tr>
+
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Voltar", "Index", "", new { @class = "btn btn-primary" })
+</p>

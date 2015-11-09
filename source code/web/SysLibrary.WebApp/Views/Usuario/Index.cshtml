@@ -1,0 +1,57 @@
+﻿@model SysLibrary.WebApp.Models.UsuarioViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">&nbsp;</div>
+<div class="row">
+
+    <h2>Listagem de Usuários</h2>
+
+    <p>
+        @Html.ActionLink("Novo", "Create", "", new { @class = "btn btn-primary  pull-right" })
+    </p>
+
+</div>
+
+<div class="row">&nbsp;</div>
+
+<div class="row">
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th class="col-lg-2"></th>
+        </tr>
+
+        @if (Model.Usuarios.Count() > 0)
+        {
+
+            foreach (var item in Model.Usuarios)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-info" })
+                        @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-sm btn-danger pull-right" })
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">Nenhuma usuário cadastrado...</td>
+            </tr>
+        }
+
+    </table>
+
+</div>

@@ -1,0 +1,73 @@
+﻿@model SysLibrary.WebApp.Models.GeneroViewModel
+
+@{
+    ViewBag.Title = "Cadastrar Gêneros";
+}
+
+
+
+<div class="row">&nbsp;</div>
+
+<div class="row">
+
+    <div role="form" class="panel panel-primary">
+
+        <div class="panel-heading">Cadastro de Gêneros</div>
+
+        <div class="panel-body">
+
+            @using (Html.BeginForm("Create", "Genero", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+
+                    @Html.HiddenFor(x => x.Genero.Id)
+
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group col-md-3">
+                        <label>Nome</label>
+                        @Html.TextBoxFor(x => x.Genero.Nome, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Genero.Nome)
+                    </div>
+
+                    <div class="form-group col-md-1">
+                        <label>&nbsp;</label>
+                        <input type="submit" value="Salvar" class="btn btn-primary" />
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Genero.Nome)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Generos)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td class="col-lg-2">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-info" })
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-sm btn-danger pull-right" })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</div>

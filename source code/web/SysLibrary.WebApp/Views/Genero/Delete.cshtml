@@ -1,0 +1,28 @@
+﻿@model SysLibrary.WebApp.Models.GeneroViewModel
+
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+
+<h3>Deseja realmente excluir esse gênero?</h3>
+<div>
+    <hr />
+
+
+    <h3>@Html.DisplayFor(x => x.Genero.Nome)</h3>
+
+
+    <br />
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-danger" />
+            @Html.ActionLink("Voltar", "Index", "", new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

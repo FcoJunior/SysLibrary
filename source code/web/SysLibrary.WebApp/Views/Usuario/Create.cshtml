@@ -1,0 +1,140 @@
+﻿@model SysLibrary.WebApp.Models.UsuarioViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<div class="row">&nbsp;</div>
+@using (Html.BeginForm("Create", "Usuario", FormMethod.Post))
+{
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Cadastro de Usuario</div>
+        <div class="panel-body">
+
+           
+                @Html.AntiForgeryToken()
+
+
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(x => x.Usuario.Id)
+
+                <div class="row">
+                    <div class="form-group col-lg-2">
+                        <label>Código</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Id, new { @class = "form-control", disabled="disabled" })
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="form-group col-lg-6">
+                        <label>Nome</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Nome, new { @class = "form-control"})
+                            @Html.ValidationMessageFor(model => model.Usuario.Nome)
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-lg-6">
+                        <label>Endereço</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Endereco, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Endereco)
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-lg-3">
+                        <label>Bairro</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Bairro, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Bairro)
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-3">
+                        <label>Estado</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Estado, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Estado)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="form-group col-lg-3">
+                        <label>Cidade</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Cidade, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Cidade)
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-3">
+                        <label>CEP</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.CEP, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.CEP)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="form-group col-lg-3">
+                        <label>CPF</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.CPF, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.CPF)
+                        </div>
+                    </div>
+
+                    <div class="form-group col-lg-3">
+                        <label>Telefone</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Telefone, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Telefone)
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="row">
+
+                    <div class="form-group col-lg-6">
+                        <label>E-mail</label>
+                        <div>
+                            @Html.TextBoxFor(model => model.Usuario.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Usuario.Email)
+                        </div>
+                    </div>
+
+                </div>
+
+            
+        </div>
+
+        <div class="panel-footer">
+
+            <input type="submit" value="Salvar" class="btn btn-primary" />
+            @Html.ActionLink("Voltar", "Index", "", new { @class = "btn btn-primary pull-right" })
+
+        </div>
+    </div>
+</div>
+}
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

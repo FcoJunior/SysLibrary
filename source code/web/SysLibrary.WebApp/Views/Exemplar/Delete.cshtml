@@ -1,0 +1,27 @@
+﻿@model SysLibrary.WebApp.Models.ExemplarViewModel
+@{
+    ViewBag.Title = "Deletar";
+}
+
+
+<h3>Deseja realmente excluir esse exemplar?</h3>
+<div>
+    <hr />
+
+
+    <h3>@Html.DisplayFor(x => x.Exemplar.Obra.Titulo)</h3>
+
+
+    <br />
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-danger" />
+            @Html.ActionLink("Voltar", "Index", "", new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>
+

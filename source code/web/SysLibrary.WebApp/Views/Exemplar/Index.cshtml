@@ -1,0 +1,62 @@
+﻿@model SysLibrary.WebApp.Models.ExemplarViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">&nbsp;</div>
+<div class="row">
+
+    <h2>Listagem de Exemplares</h2>
+
+    <p>
+        @Html.ActionLink("Novo", "Create", "", new { @class = "btn btn-primary  pull-right" })
+    </p>
+
+</div>
+
+<div class="row">&nbsp;</div>
+
+<div class="row">
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Patrimônio</th>
+            <th>Título</th>
+            <th>Status</th>
+            <th class="col-lg-3"></th>
+        </tr>
+
+        @if (Model.Exemplares.Count() > 0)
+        {
+
+            foreach (var item in Model.Exemplares)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Patrimonio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Obra.Titulo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Visualizar", "Details", new { id = item.Id }, new { @class = "btn btn-sm btn-primary" })
+                        @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-sm btn-info" })
+                        @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-sm btn-danger" })
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">Nenhum exemplar cadastrado...</td>
+            </tr>
+        }
+
+    </table>
+
+</div>
