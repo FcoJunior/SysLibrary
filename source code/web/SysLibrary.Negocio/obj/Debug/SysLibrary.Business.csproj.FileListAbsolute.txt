@@ -13,3 +13,20 @@ C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Negocio\obj\Debug\Sys
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.dll
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb

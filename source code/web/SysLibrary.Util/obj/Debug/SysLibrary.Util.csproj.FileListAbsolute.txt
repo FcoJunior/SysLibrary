@@ -3,3 +3,12 @@ C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\bin\Debug\SysLib
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
 C:\Users\Jocieldo\Desktop\SysLibrary\SysLibrary\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
