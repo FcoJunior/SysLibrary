@@ -28,6 +28,20 @@ namespace SysLibrary.WebApp.Controllers
             return View(model);
         }
 
+        public ActionResult ExemplarName(int id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var exemplar = ExemplarBO.Find<Exemplar>(id);
+            if (exemplar == null)
+            {
+                return HttpNotFound();
+            }
+            return JavaScript(exemplar.Obra.Titulo);
+        }
+
         // GET: /Exemplar/Details/5
         public ActionResult Details(int? id)
         {

@@ -31,6 +31,8 @@ namespace SysLibrary.WebApp.Controllers.App
             {
                 UsuarioViewModel vm = new UsuarioViewModel();
                 vm.Usuario = UsuarioBO.Find<Usuario>(usuarioId);
+                LocacaoBO lbo = new LocacaoBO();
+                vm.Locacoes = lbo.GetLocacaoByUsuario(usuarioId);
                 if(vm.Usuario == null)
                 {
                     vm.Usuario = new Usuario();

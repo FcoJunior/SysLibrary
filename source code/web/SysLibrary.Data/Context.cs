@@ -24,6 +24,7 @@ namespace SysLibrary.Data
         public DbSet<Genero> Genero { get; set; }
         public DbSet<Obra> Obra { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Locacao> Locacao { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -35,6 +36,7 @@ namespace SysLibrary.Data
             modelBuilder.Entity<Genero>().ToTable("Generos");
             modelBuilder.Entity<Obra>().ToTable("Obras");
             modelBuilder.Entity<Usuario>().ToTable("Usuarios");
+            modelBuilder.Entity<Locacao>().ToTable("Locacoes");
 
             base.OnModelCreating(modelBuilder);
 

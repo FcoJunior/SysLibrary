@@ -30,3 +30,12 @@ C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newt
 C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
 C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
 C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
+C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb

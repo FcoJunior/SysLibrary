@@ -1,4 +1,5 @@
-﻿using SysLibrary.Entities;
+﻿using SysLibrary.Business;
+using SysLibrary.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace SysLibrary.WebApp.Models
     {
         public UsuarioViewModel()
         {
-
+            
         }
 
         public Usuario Usuario { get; set; }
