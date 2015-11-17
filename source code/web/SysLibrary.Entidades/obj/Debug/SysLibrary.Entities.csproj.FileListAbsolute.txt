@@ -18,3 +18,13 @@ C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysL
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.dll
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.dll.config
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.csprojResolveAssemblyReference.cache
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.pdb

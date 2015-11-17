@@ -15,5 +15,6 @@ namespace SysLibrary.WebApp.Models
 
         public Usuario Usuario { get; set; }
         public ICollection<Usuario> Usuarios { get; set; }
+        public ICollection<Locacao> Locacoes { get; set; }
     }
 }

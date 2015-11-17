@@ -47,3 +47,20 @@ C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysL
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.dll
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb

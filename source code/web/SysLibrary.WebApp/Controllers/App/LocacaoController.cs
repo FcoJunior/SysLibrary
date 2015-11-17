@@ -25,9 +25,26 @@ namespace SysLibrary.WebApp.Controllers.App
         }
 
         // GET: Locacao
-        public ActionResult Index(int usuarioId)
+        public ActionResult Index(int? usuarioId)
         {
-            return View();
+            try
+            {
+                UsuarioViewModel vm = new UsuarioViewModel();
+                vm.Usuario = UsuarioBO.Find<Usuario>(usuarioId);
+                if(vm.Usuario == null)
+                {
+                    vm.Usuario = new Usuario();
+                }
+                if(vm.Locacoes == null)
+                {
+                    vm.Locacoes = new List<Locacao>();
+                }
+                return View(vm);
+            }
+            catch
+            {
+                return View(new UsuarioViewModel());
+            }
         }
 
         // GET: Locacao/Details/5

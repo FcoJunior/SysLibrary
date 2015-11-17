@@ -40,3 +40,17 @@ C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysL
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll.config
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb

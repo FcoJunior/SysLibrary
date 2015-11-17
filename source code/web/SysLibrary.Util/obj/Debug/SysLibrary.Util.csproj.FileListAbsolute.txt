@@ -21,3 +21,12 @@ C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysL
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
 C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Util.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\SysLibrary.Entities.pdb
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.csprojResolveAssemblyReference.cache
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.dll
+C:\Projetos\Syslibrary\SysLibrary\source code\web\SysLibrary.Util\obj\Debug\SysLibrary.Util.pdb
