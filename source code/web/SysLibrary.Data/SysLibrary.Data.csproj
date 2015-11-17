@@ -75,6 +75,14 @@
     <Compile Include="Migrations\201511041425182_alteracaoDaClasseObra4.Designer.cs">
       <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511161620442_AddTableLocacao.cs" />
+    <Compile Include="Migrations\201511161620442_AddTableLocacao.Designer.cs">
+      <DependentUpon>201511161620442_AddTableLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511161640255_RemaneColumnLocacao.cs" />
+    <Compile Include="Migrations\201511161640255_RemaneColumnLocacao.Designer.cs">
+      <DependentUpon>201511161640255_RemaneColumnLocacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511041425182_alteracaoDaClasseObra4.resx">
       <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511161620442_AddTableLocacao.resx">
+      <DependentUpon>201511161620442_AddTableLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511161640255_RemaneColumnLocacao.resx">
+      <DependentUpon>201511161640255_RemaneColumnLocacao.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

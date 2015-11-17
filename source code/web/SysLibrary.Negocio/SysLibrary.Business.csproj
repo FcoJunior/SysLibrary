@@ -48,6 +48,7 @@
     <Compile Include="EditoraBO.cs" />
     <Compile Include="ExemplarBO.cs" />
     <Compile Include="GeneroBO.cs" />
+    <Compile Include="LocacaoBO.cs" />
     <Compile Include="ObraBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioBO.cs" />

@@ -143,6 +143,7 @@
     <Compile Include="Controllers\App\ExemplarController.cs" />
     <Compile Include="Controllers\App\GeneroController.cs" />
     <Compile Include="Controllers\App\HomeController.cs" />
+    <Compile Include="Controllers\App\LocacaoController.cs" />
     <Compile Include="Controllers\App\ObraController.cs" />
     <Compile Include="Controllers\App\UsuarioController.cs" />
     <Compile Include="Controllers\Api\WSObraController.cs" />
@@ -211,6 +212,7 @@
     <Content Include="Views\Usuario\Edit.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\Logar.cshtml" />
+    <Content Include="Views\Locacao\Select.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SysLibrary.Data\SysLibrary.Data.csproj">

@@ -30,3 +30,20 @@ C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\bin
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.dll
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Business.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Repository.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Util.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\SysLibrary.Data.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.csprojResolveAssemblyReference.cache
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Negocio\obj\Debug\SysLibrary.Business.pdb

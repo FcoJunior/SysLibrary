@@ -26,3 +26,17 @@ C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Repository\
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
 C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll.config
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.xml
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb
