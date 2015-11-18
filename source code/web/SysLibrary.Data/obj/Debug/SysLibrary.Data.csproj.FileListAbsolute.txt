@@ -100,3 +100,4 @@ C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibr
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.Context.resources
+C:\Users\FcoJunr\Documents\Projetos\biblioteca 2\SysLibrary\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.Context.resources

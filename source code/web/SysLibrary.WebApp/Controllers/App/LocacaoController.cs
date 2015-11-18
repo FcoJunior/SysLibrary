@@ -18,12 +18,6 @@ namespace SysLibrary.WebApp.Controllers.App
     [Authorize]
     public class LocacaoController : Controller
     {
-        [HttpGet]
-        public ActionResult Select(int? id)
-        {
-            return View(UsuarioBO.GetAllActive<Usuario>());
-        }
-
         // GET: Locacao
         public ActionResult Index(int? usuarioId)
         {
@@ -49,10 +43,12 @@ namespace SysLibrary.WebApp.Controllers.App
             }
         }
 
-        // GET: Locacao/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Devolucao(int id)
         {
-            return View();
+            var obj = LocacaoBO.Find<Locacao>(id);
+            obj.Ativo = false;
+            LocacaoBO.Save<Locacao>(obj);
+            return RedirectToAction("Index");
         }
 
         // GET: Locacao/Create
@@ -63,13 +59,14 @@ namespace SysLibrary.WebApp.Controllers.App
 
         // POST: Locacao/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Locacao obj)
         {
             try
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                obj.DataDeLocacao = DateTime.Now;
+                LocacaoBO.Save<Locacao>(obj);
+                HttpStatusCodeResult http = new HttpStatusCodeResult(HttpStatusCode.OK);
+                return http;
             }
             catch
             {
