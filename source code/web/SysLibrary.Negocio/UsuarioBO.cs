@@ -13,12 +13,12 @@ namespace SysLibrary.Business
 {
     public class UsuarioBO : BaseBO
     {
-        public static Usuario GetUserByCredentials(Usuario usuario)
+        public static Usuario GetUserByCredentials(string Email, string Senha)
         {
             var repositorio = Factory.GetInstance();
-            usuario.Senha.Encript();
+            Senha = Senha.Encript();
 
-            return repositorio.GetAll<Usuario>(x => x.Ativo && x.Email == usuario.Email && x.Senha == usuario.Senha).FirstOrDefault();
+            return repositorio.GetAll<Usuario>(x => x.Ativo && x.Email == Email && x.Senha == Senha).FirstOrDefault();
         }
     }
 }

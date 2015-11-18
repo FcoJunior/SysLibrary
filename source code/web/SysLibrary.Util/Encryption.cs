@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
-using Newtonsoft.Json;
 using SysLibrary.Entities;
 
 namespace SysLibrary.Util
@@ -13,7 +12,7 @@ namespace SysLibrary.Util
     {
         public static string Base64Encode(EncryptionObject obj)
         {
-            string json = JsonConvert.SerializeObject(obj);
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
             var buffer = Encoding.UTF8.GetBytes(json);
             return Convert.ToBase64String(buffer);
         }
@@ -22,7 +21,7 @@ namespace SysLibrary.Util
         {
             var buffer = Convert.FromBase64String(text);
             string json = Encoding.UTF8.GetString(buffer);
-            return JsonConvert.DeserializeObject<EncryptionObject>(json);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<EncryptionObject>(json);
         }
 
         public static string CreateToken(Usuario usuario)

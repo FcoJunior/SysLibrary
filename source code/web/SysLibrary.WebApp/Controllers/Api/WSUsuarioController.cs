@@ -12,16 +12,16 @@ namespace SysLibrary.WebApp.Controllers
 {
     public class WSUsuarioController : ApiController
     {
-        [HttpPost]
+        [HttpGet]
         [Route("api/usuario/login")]
-        public HttpResponseMessage Login([FromBody]Usuario entity)
+        public HttpResponseMessage Login(string Email, string Senha)
         {
-            if(entity == null)
+            if (Email == null || Senha == null)
                 return Request.CreateResponse(HttpStatusCode.BadRequest, "Login Inválido");
 
-            try { 
+            try {
 
-                var usuario = UsuarioBO.GetUserByCredentials(entity);
+                var usuario = UsuarioBO.GetUserByCredentials(Email, Senha);
 
                 if(usuario == null)
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "Login Inválido");
@@ -31,8 +31,9 @@ namespace SysLibrary.WebApp.Controllers
                 UsuarioBO.Save<Usuario>(usuario);
 
                 var encriptObj = new EncryptionObject(usuario.Id, usuario.Token);
+                var tk = Encryption.Base64Encode(encriptObj);
 
-                return Request.CreateResponse(HttpStatusCode.OK, Encryption.Base64Encode(encriptObj));
+                return Request.CreateResponse(HttpStatusCode.OK, tk);
 
             }
             catch(Exception ex)

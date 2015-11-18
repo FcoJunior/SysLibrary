@@ -68,3 +68,17 @@ C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibr
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll.config
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Repository.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Repository\obj\Debug\SysLibrary.Repository.pdb
