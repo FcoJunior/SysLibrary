@@ -1,0 +1,127 @@
+﻿
+@model SysLibrary.WebApp.Models.ExemplarViewModel
+
+<div class="row">&nbsp;</div>
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">Cadastro de Exemplares</div>
+    <div class="panel-body">
+
+ 
+        <div class="row">
+
+            <div class="form-group col-lg-4">
+            
+                <div class="input-group">
+                    @Html.TextBoxFor(x => x.Exemplar.Patrimonio, new { @class = "form-control" })
+                    <span class="input-group-btn">
+                        <button id="btnBuscarLocacao" class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row " id="tableIdentificacao">
+            
+            <table class="table table-bordered ">
+                <tbody>
+                    <tr>
+                        <td class="col-lg-5"><b>Título</b></td>
+                        <td class="col-lg-6" id="txtTitulo"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lg-5"><b>Identificação</b></td>
+                        <td class="col-lg-6" id="txtUsuario"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="panel-footer">
+
+        <button class="btn btn-primary" id="btnAdcionar">Adicionar</button>
+
+    </div>
+
+</div>
+
+<table class="table table-bordered" >
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Prev. Dev.</th>
+            <th>Devolução</th>
+            <th>Dias Atrasados</th>
+            <th>Valor Multa</th>
+        </tr>
+    </thead>
+    <tbody id="tabelaDevolver"></tbody>
+</table>
+
+<script>
+
+
+    $(document).ready(function () {
+
+        $("#tableIdentificacao").hide();
+
+        $("#btnBuscarLocacao").click(function () {
+           
+            var id = $("#Exemplar_Patrimonio").val();
+
+            $.ajax({
+                method: "GET",
+                url: "@Url.Action("BuscarExemplarPorCodigo", "Devolucao")",
+                data: { codigo: id }
+            })
+          .done(function (msg) {
+
+              $("#txtTitulo").html(msg[0].Titulo);
+              $("#txtUsuario").html(msg[0].Usuario);
+
+              $("#tableIdentificacao").show();
+
+          }).fail(function (jqXHR, textStatus) {
+
+              $("#tableIdentificacao").hide();
+
+          });
+
+
+        });
+
+
+        $("#btnAdcionar").click(function () {
+
+            var id = $("#Exemplar_Patrimonio").val();
+           
+            var tabela = $("#tabelaDevolver");
+
+            $.ajax({
+                method: "GET",
+                url: "@Url.Action("BuscarInformacoesDaLocacaoPorCodigo", "Devolucao")",
+                data: { codigo: id }
+        })
+          .done(function (msg) {
+
+              var ok = $(".patrimonioId:contains("+msg[0].Id+")");
+
+              if (ok.length > 0)
+                  return;
+
+              tabela.append("<tr><td class='patrimonioId' style='display:none;'>" + msg[0].Id + "</td><td>" + msg[0].Titulo + "</td><td>" + msg[0].DataPrevista + "</td><td>" + msg[0].DataDeDevolucao + "</td><td>" + msg[0].DiasAtrasados + "</td><td>" + msg[0].Valor + "</td></tr>");
+
+          }).fail(function (jqXHR, textStatus) {
+
+          });
+
+        });
+
+    });
+
+</script>

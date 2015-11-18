@@ -10,6 +10,8 @@ namespace SysLibrary.Business.Base
 {
     public class BaseBO
     {
+        //IRepository repositorio = SysLibrary.Repository.Factory.GetInstance();
+        
         public static void Save<TEntidade>(TEntidade entity) where TEntidade : BaseEntity
         {
             var repositorio = SysLibrary.Repository.Factory.GetInstance();

@@ -38,3 +38,13 @@ C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibr
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.dll
 C:\Users\Prolins-PC\Documents\Ruby\SysLibrary\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.dll.config
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\SysLibrary.Entities.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.dll
+C:\Users\Jocieldo\Source\Repos\SysLibrary\source code\web\SysLibrary.Entidades\obj\Debug\SysLibrary.Entities.pdb

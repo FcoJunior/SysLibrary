@@ -3,16 +3,16 @@ namespace SysLibrary.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class alteracaoDaClasseObra4 : DbMigration
+    public partial class atualizacoes1 : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("dbo.Obras", "AnoDePublicacao", c => c.Int());
+            AlterColumn("dbo.Locacoes", "DataDeDevolucao", c => c.DateTime());
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Obras", "AnoDePublicacao", c => c.Int(nullable: false));
+            AlterColumn("dbo.Locacoes", "DataDeDevolucao", c => c.DateTime(nullable: false));
         }
     }
 }

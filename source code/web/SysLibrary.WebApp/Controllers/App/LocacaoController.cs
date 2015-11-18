@@ -25,8 +25,8 @@ namespace SysLibrary.WebApp.Controllers.App
             {
                 UsuarioViewModel vm = new UsuarioViewModel();
                 vm.Usuario = UsuarioBO.Find<Usuario>(usuarioId);
-                LocacaoBO lbo = new LocacaoBO();
-                vm.Locacoes = lbo.GetLocacaoByUsuario(usuarioId);
+                vm.Locacoes = LocacaoBO.GetLocacaoByUsuario(usuarioId);
+
                 if(vm.Usuario == null)
                 {
                     vm.Usuario = new Usuario();
@@ -45,9 +45,13 @@ namespace SysLibrary.WebApp.Controllers.App
 
         public ActionResult Devolucao(int id)
         {
-            var obj = LocacaoBO.Find<Locacao>(id);
-            obj.Ativo = false;
-            LocacaoBO.Save<Locacao>(obj);
+            using (var repositorio = SysLibrary.Repository.Factory.GetInstance())
+            {
+                var obj = repositorio.GetById<Locacao>(id);
+                obj.DataDeDevolucao = DateTime.Now;
+                repositorio.Save<Locacao>(obj);
+            }
+
             return RedirectToAction("Index");
         }
 

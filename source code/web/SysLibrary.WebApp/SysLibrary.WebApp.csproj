@@ -140,6 +140,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\App\AutorController.cs" />
+    <Compile Include="Controllers\App\DevolucaoController.cs" />
     <Compile Include="Controllers\App\EditoraController.cs" />
     <Compile Include="Controllers\App\ExemplarController.cs" />
     <Compile Include="Controllers\App\GeneroController.cs" />
@@ -214,6 +215,7 @@
     <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Usuario\Logar.cshtml" />
     <Content Include="Views\Locacao\Index.cshtml" />
+    <Content Include="Views\Devolucao\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SysLibrary.Data\SysLibrary.Data.csproj">
@@ -227,6 +229,10 @@
     <ProjectReference Include="..\SysLibrary.Negocio\SysLibrary.Business.csproj">
       <Project>{f587bdf1-e4e3-4b69-8628-fadaea6ad8e8}</Project>
       <Name>SysLibrary.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SysLibrary.Repository\SysLibrary.Repository.csproj">
+      <Project>{f0d45506-e953-41a0-bef5-9804ea585301}</Project>
+      <Name>SysLibrary.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\SysLibrary.Util\SysLibrary.Util.csproj">
       <Project>{13b5c5aa-38dc-4e5e-98fd-d3a62ab19e01}</Project>

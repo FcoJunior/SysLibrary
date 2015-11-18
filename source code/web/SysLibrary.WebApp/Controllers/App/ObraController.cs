@@ -54,14 +54,12 @@ namespace SysLibrary.WebApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ObraViewModel model)
         {
-            if (ModelState.IsValid)
-            {
-                model.Obra.DataDeCadastro = DateTime.Today;
-                ObraBO.Save<Obra>(model.Obra);
-                return RedirectToAction("Index");
-            }
+            
+            model.Obra.DataDeCadastro = DateTime.Today;
+            ObraBO.Save<Obra>(model.Obra);
 
-            return View(model);
+            return RedirectToAction("Index");
+     
         }
 
         // GET: /Obra/Edit/5

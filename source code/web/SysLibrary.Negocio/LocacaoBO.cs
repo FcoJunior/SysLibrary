@@ -10,10 +10,10 @@ namespace SysLibrary.Business
 {
     public class LocacaoBO : BaseBO
     {
-        public ICollection<Locacao> GetLocacaoByUsuario(int? id)
+        public static ICollection<Locacao> GetLocacaoByUsuario(int? id)
         {
             var repositorio = SysLibrary.Repository.Factory.GetInstance();
-            return repositorio.GetAll<Locacao>().Where(c => c.Ativo && c.UsuarioId == id).ToList();
+            return repositorio.GetAll<Locacao>().Where(c => c.Ativo && c.UsuarioId == id && c.DataDeDevolucao == null).ToList();
         }
     }
 }

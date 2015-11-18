@@ -66,7 +66,7 @@
                         <tr>
                             <td>@e.ExemplarId</td>
                             <td>@e.DataDeLocacao.ToString("dd/MM/yyyy")</td>
-                            <td>@e.DataDeDevolucao.ToString("dd/MM/yyyy")</td>
+                            <td>@(e.DataDeDevolucao != null ? e.DataDeDevolucao.Value.ToString("dd/MM/yyyy") : "n/a")</td>
                             <td><a href="http://localhost:56855/Locacao/Devolucao?id=@e.Id">Devolver</a></td>
                         </tr>
                     }

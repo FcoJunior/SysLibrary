@@ -7,13 +7,13 @@ namespace SysLibrary.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class alteracaoDaClasseObra2 : IMigrationMetadata
+    public sealed partial class atualizacoes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(alteracaoDaClasseObra2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(atualizacoes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201511041423259_alteracaoDaClasseObra2"; }
+            get { return "201511181708505_atualizacoes"; }
         }
         
         string IMigrationMetadata.Source

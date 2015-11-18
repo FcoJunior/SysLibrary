@@ -51,41 +51,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
-    <Compile Include="Migrations\201510280418046_InitialCreate.cs" />
-    <Compile Include="Migrations\201510280418046_InitialCreate.Designer.cs">
-      <DependentUpon>201510280418046_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201511181708505_atualizacoes.cs" />
+    <Compile Include="Migrations\201511181708505_atualizacoes.Designer.cs">
+      <DependentUpon>201511181708505_atualizacoes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511041328160_alteracaoDaClasseUsuario.cs" />
-    <Compile Include="Migrations\201511041328160_alteracaoDaClasseUsuario.Designer.cs">
-      <DependentUpon>201511041328160_alteracaoDaClasseUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511041401298_alteracaoDaClasseObra.cs" />
-    <Compile Include="Migrations\201511041401298_alteracaoDaClasseObra.Designer.cs">
-      <DependentUpon>201511041401298_alteracaoDaClasseObra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511041423259_alteracaoDaClasseObra2.cs" />
-    <Compile Include="Migrations\201511041423259_alteracaoDaClasseObra2.Designer.cs">
-      <DependentUpon>201511041423259_alteracaoDaClasseObra2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511041424198_alteracaoDaClasseObra3.cs" />
-    <Compile Include="Migrations\201511041424198_alteracaoDaClasseObra3.Designer.cs">
-      <DependentUpon>201511041424198_alteracaoDaClasseObra3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511041425182_alteracaoDaClasseObra4.cs" />
-    <Compile Include="Migrations\201511041425182_alteracaoDaClasseObra4.Designer.cs">
-      <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511161620442_AddTableLocacao.cs" />
-    <Compile Include="Migrations\201511161620442_AddTableLocacao.Designer.cs">
-      <DependentUpon>201511161620442_AddTableLocacao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511161640255_RemaneColumnLocacao.cs" />
-    <Compile Include="Migrations\201511161640255_RemaneColumnLocacao.Designer.cs">
-      <DependentUpon>201511161640255_RemaneColumnLocacao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511171347384_Context.cs" />
-    <Compile Include="Migrations\201511171347384_Context.Designer.cs">
-      <DependentUpon>201511171347384_Context.cs</DependentUpon>
+    <Compile Include="Migrations\201511181714023_atualizacoes1.cs" />
+    <Compile Include="Migrations\201511181714023_atualizacoes1.Designer.cs">
+      <DependentUpon>201511181714023_atualizacoes1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,32 +73,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510280418046_InitialCreate.resx">
-      <DependentUpon>201510280418046_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511181708505_atualizacoes.resx">
+      <DependentUpon>201511181708505_atualizacoes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511041328160_alteracaoDaClasseUsuario.resx">
-      <DependentUpon>201511041328160_alteracaoDaClasseUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511041401298_alteracaoDaClasseObra.resx">
-      <DependentUpon>201511041401298_alteracaoDaClasseObra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511041423259_alteracaoDaClasseObra2.resx">
-      <DependentUpon>201511041423259_alteracaoDaClasseObra2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511041424198_alteracaoDaClasseObra3.resx">
-      <DependentUpon>201511041424198_alteracaoDaClasseObra3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511041425182_alteracaoDaClasseObra4.resx">
-      <DependentUpon>201511041425182_alteracaoDaClasseObra4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511161620442_AddTableLocacao.resx">
-      <DependentUpon>201511161620442_AddTableLocacao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511161640255_RemaneColumnLocacao.resx">
-      <DependentUpon>201511161640255_RemaneColumnLocacao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511171347384_Context.resx">
-      <DependentUpon>201511171347384_Context.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201511181714023_atualizacoes1.resx">
+      <DependentUpon>201511181714023_atualizacoes1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
