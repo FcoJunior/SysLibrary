@@ -107,8 +107,7 @@ C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\bin\D
 C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.xml
 C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csprojResolveAssemblyReference.cache
-C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.atualizacoes.resources
-C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.atualizacoes1.resources
-C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csproj.GenerateResource.Cache
 C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.dll
 C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.pdb
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.Migrations.atualizacaoServidor.resources
+C:\Users\Jocieldo\Source\Repos\SysLibrary2\source code\web\SysLibrary.Data\obj\Debug\SysLibrary.Data.csproj.GenerateResource.Cache

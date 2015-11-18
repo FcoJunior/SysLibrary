@@ -51,14 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
-    <Compile Include="Migrations\201511181708505_atualizacoes.cs" />
-    <Compile Include="Migrations\201511181708505_atualizacoes.Designer.cs">
-      <DependentUpon>201511181708505_atualizacoes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201511181714023_atualizacoes1.cs" />
-    <Compile Include="Migrations\201511181714023_atualizacoes1.Designer.cs">
-      <DependentUpon>201511181714023_atualizacoes1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -71,14 +63,6 @@
       <Project>{d2d4b38e-6559-40fc-bd55-c00b14af50ba}</Project>
       <Name>SysLibrary.Entities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511181708505_atualizacoes.resx">
-      <DependentUpon>201511181708505_atualizacoes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511181714023_atualizacoes1.resx">
-      <DependentUpon>201511181714023_atualizacoes1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
