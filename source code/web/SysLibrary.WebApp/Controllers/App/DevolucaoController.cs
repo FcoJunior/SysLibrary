@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -22,10 +23,11 @@ namespace SysLibrary.WebApp.Controllers.App
         public JsonResult BuscarExemplarPorCodigo(string codigo)
         {
             var locacao = LocacaoBO.GetAllActive<Locacao>(x => x.Exemplar.Patrimonio == codigo && x.DataDeDevolucao == null);
+
             if (locacao.Count() == 0)
             {
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return Json(new { Erro = "Nenhuma locação encontrada para este exemplar!" }, JsonRequestBehavior.AllowGet);
+                return Json("Nenhuma locação encontrada para este exemplar!", JsonRequestBehavior.AllowGet);
             }
 
             var json = locacao.Select(x => new { Titulo = x.Exemplar.Obra.Titulo, Usuario = x.Usuario.Nome}).ToList();
@@ -39,7 +41,7 @@ namespace SysLibrary.WebApp.Controllers.App
             if (locacao.Count() == 0)
             {
                 Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return Json(new { Erro = "Nenhuma locação encontrada para este exemplar!" }, JsonRequestBehavior.AllowGet);
+                return Json("Nenhuma locação encontrada para este exemplar!", JsonRequestBehavior.AllowGet);
             }
 
             var json = locacao.Select(x => new { Titulo = x.Exemplar.Obra.Titulo,
@@ -51,6 +53,19 @@ namespace SysLibrary.WebApp.Controllers.App
 
             return Json(json, JsonRequestBehavior.AllowGet);
 
+        }
+
+        [HttpPost]
+        public JsonResult DevolverLivros(FormCollection form)
+        {
+            var ids = Regex.Matches(form[0], @"\d+").Cast<Match>().Select(m => int.Parse(m.Value)).ToList();
+
+            if (ids.Count() == 0)
+                return Json(new { Erro = "Nenhuma exemplar para devolver!" }, JsonRequestBehavior.AllowGet);
+
+            LocacaoBO.Devolver(ids);
+
+            return Json(new { Sucesso = "OK" }, JsonRequestBehavior.AllowGet);
         }
 	}
 }

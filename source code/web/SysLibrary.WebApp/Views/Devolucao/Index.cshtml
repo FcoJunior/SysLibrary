@@ -50,6 +50,7 @@
 
 </div>
 
+
 <table class="table table-bordered" >
     <thead>
         <tr>
@@ -61,10 +62,24 @@
         </tr>
     </thead>
     <tbody id="tabelaDevolver"></tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4"><b>Total</b></td>
+            <td id="total"></td>
+        </tr>
+    </tfoot>
 </table>
+
+
+<div class="table">
+
+    <button class="btn btn-success" id="btnDevolver">Devolver</button>
+
+</div>
 
 <script>
 
+    var total = 0;
 
     $(document).ready(function () {
 
@@ -86,8 +101,9 @@
 
               $("#tableIdentificacao").show();
 
-          }).fail(function (jqXHR, textStatus) {
+          }).error(function (msg) {
 
+             alert(msg.responseText);
               $("#tableIdentificacao").hide();
 
           });
@@ -114,9 +130,58 @@
               if (ok.length > 0)
                   return;
 
-              tabela.append("<tr><td class='patrimonioId' style='display:none;'>" + msg[0].Id + "</td><td>" + msg[0].Titulo + "</td><td>" + msg[0].DataPrevista + "</td><td>" + msg[0].DataDeDevolucao + "</td><td>" + msg[0].DiasAtrasados + "</td><td>" + msg[0].Valor + "</td></tr>");
+              var exemplarId = msg[0].Id;
+              var titulo = msg[0].Titulo;
+              var dataPrevista = msg[0].DataPrevista;
+              var diasAtrasados = msg[0].DiasAtrasados;
+              var valor = msg[0].Valor;
+
+              if (diasAtrasados < 0)
+                  diasAtrasados = 0;
+
+              if (valor < 0)
+                  valor = 0;
+
+              total += valor;
+              $("#total").html(total);
+
+              tabela.append("<tr><td class='patrimonioId' style='display:none;'>" + exemplarId + "</td><td>" + titulo + "</td><td>" + dataPrevista + "</td><td>" + msg[0].DataDeDevolucao + "</td><td>" + diasAtrasados + "</td><td>" + valor + "</td></tr>");
+
+              $("#tableIdentificacao").hide();
+              $("#Exemplar_Patrimonio").val("");
 
           }).fail(function (jqXHR, textStatus) {
+
+          });
+
+        });
+
+
+        $("#btnDevolver").click(function () {
+
+            var lista = $(".patrimonioId");
+            var ids = [];
+
+
+            $.each(lista, function (key, val) {
+                ids.push($(val).text());
+            });
+
+            $.ajax({
+                method: "POST",
+                url: "@Url.Action("DevolverLivros", "Devolucao")",
+                data: { lista: ids }
+        })
+          .done(function (msg) {
+
+              alert("Livros devolvidos!");
+              $("#tableIdentificacao").hide();
+              $("#tabelaDevolver").html("");
+              total = 0;
+
+          }).fail(function (jqXHR, textStatus) {
+
+              alert("Erro ao devolver os livros!");
 
           });
 

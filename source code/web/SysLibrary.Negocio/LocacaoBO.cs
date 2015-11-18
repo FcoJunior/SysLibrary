@@ -15,5 +15,28 @@ namespace SysLibrary.Business
             var repositorio = SysLibrary.Repository.Factory.GetInstance();
             return repositorio.GetAll<Locacao>().Where(c => c.Ativo && c.UsuarioId == id && c.DataDeDevolucao == null).ToList();
         }
+
+        public static void Devolver(int id)
+        {
+            var repositorio = SysLibrary.Repository.Factory.GetInstance();
+            var locacao = repositorio.GetById<Locacao>(id);
+
+            locacao.DataDeDevolucao = DateTime.Today;
+            repositorio.Save<Locacao>(locacao);
+        }
+
+        public static void Devolver(List<int> lista)
+        {
+            using(var repositorio = SysLibrary.Repository.Factory.GetInstance())
+            {
+                foreach (var id in lista)
+                {
+                    var locacao = repositorio.GetById<Locacao>(id);
+                    locacao.DataDeDevolucao = DateTime.Today;
+                    repositorio.Save<Locacao>(locacao);
+                    repositorio.Commit();
+                }
+            }
+        }
     }
 }

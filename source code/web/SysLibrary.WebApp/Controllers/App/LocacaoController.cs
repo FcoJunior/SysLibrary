@@ -50,6 +50,7 @@ namespace SysLibrary.WebApp.Controllers.App
                 var obj = repositorio.GetById<Locacao>(id);
                 obj.DataDeDevolucao = DateTime.Now;
                 repositorio.Save<Locacao>(obj);
+                repositorio.Commit();
             }
 
             return RedirectToAction("Index");
